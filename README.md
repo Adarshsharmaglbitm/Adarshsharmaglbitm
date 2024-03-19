@@ -6,7 +6,7 @@
 
 - 🌱 I’m currently learning **DSA, Cloud Computing , JavaScipt**
 
-- 💬 Ask me about **Full-Stack Developer**
+- 💬 Ask me about **Front-end Developer**
 
 - 📫 How to reach me **adarsh1293@gmail.com**
 
