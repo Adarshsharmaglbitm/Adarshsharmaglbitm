@@ -4,7 +4,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=adarshsharmaglbitm&label=Profile%20views&color=0e75b6&style=flat" alt="adarshsharmaglbitm" /> </p>
 
-- 🌱 I’m currently learning **DSA, Cloud Computing , JavaScipt**
+- 🌱 I’m currently learning **DSA, Java,SpringBoot, Cloud Computing , JavaScipt**
 
 - 💬 Ask me about **Java Developer**
 
@@ -28,38 +28,5 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=adarshsharmaglbitm&show_icons=true&locale=en" alt="adarshsharmaglbitm" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=adarshsharmaglbitm&" alt="adarshsharmaglbitm" /></p>
-name: Update LeetCode Stats
 
-on:
-  schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight
-  workflow_dispatch:  # Manual trigger
 
-jobs:
-  update:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v3
-
-    - name: Set up Python
-      uses: actions/setup-python@v3
-      with:
-        python-version: '3.x'
-
-    - name: Install Dependencies
-      run: pip install requests beautifulsoup4
-
-    - name: Fetch LeetCode Stats
-      env:
-        LEETCODE_USERNAME: 'your_leetcode_username'
-      run: python leetcode_stats.py
-
-    - name: Commit and Push Changes
-      run: |
-        git config user.name 'github-actions'
-        git config user.email 'actions@github.com'
-        git add README.md
-        git commit -m 'Update LeetCode stats' || exit 0
-        git push
